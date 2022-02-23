@@ -1,0 +1,6 @@
+framework module Pods_arcweather_ios {
+  umbrella header "Pods-arcweather-ios-umbrella.h"
+
+  export *
+  module * { export * }
+}

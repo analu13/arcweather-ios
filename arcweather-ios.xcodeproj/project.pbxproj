@@ -13,9 +13,11 @@
 		219B45E927C6D37E00EFB17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219B45E727C6D37E00EFB17C /* Main.storyboard */; };
 		219B45EB27C6D38900EFB17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219B45EA27C6D38900EFB17C /* Assets.xcassets */; };
 		219B45EE27C6D38900EFB17C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219B45EC27C6D38900EFB17C /* LaunchScreen.storyboard */; };
+		4A3A1165695F446225F44815 /* Pods_arcweather_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122137D5C43AD120826CC758 /* Pods_arcweather_ios.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		122137D5C43AD120826CC758 /* Pods_arcweather_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_arcweather_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		219B45DE27C6D37E00EFB17C /* arcweather-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "arcweather-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		219B45E127C6D37E00EFB17C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		219B45E327C6D37E00EFB17C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		219B45EA27C6D38900EFB17C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		219B45ED27C6D38900EFB17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		219B45EF27C6D38900EFB17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6E361CCE27581DA1F3BCCB2E /* Pods-arcweather-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arcweather-ios.debug.xcconfig"; path = "Target Support Files/Pods-arcweather-ios/Pods-arcweather-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		6E44CE3D94D37644DA8DFB17 /* Pods-arcweather-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arcweather-ios.release.xcconfig"; path = "Target Support Files/Pods-arcweather-ios/Pods-arcweather-ios.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A3A1165695F446225F44815 /* Pods_arcweather_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +47,8 @@
 			children = (
 				219B45E027C6D37E00EFB17C /* arcweather-ios */,
 				219B45DF27C6D37E00EFB17C /* Products */,
+				9D7D1EE121A153779E18153D /* Pods */,
+				4CDF7B05D4BBB77B6A62E269 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "arcweather-ios";
 			sourceTree = "<group>";
 		};
+		4CDF7B05D4BBB77B6A62E269 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				122137D5C43AD120826CC758 /* Pods_arcweather_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9D7D1EE121A153779E18153D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6E361CCE27581DA1F3BCCB2E /* Pods-arcweather-ios.debug.xcconfig */,
+				6E44CE3D94D37644DA8DFB17 /* Pods-arcweather-ios.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 219B45F227C6D38900EFB17C /* Build configuration list for PBXNativeTarget "arcweather-ios" */;
 			buildPhases = (
+				B5481B5238FA01A1E53AB7B5 /* [CP] Check Pods Manifest.lock */,
 				219B45DA27C6D37E00EFB17C /* Sources */,
 				219B45DB27C6D37E00EFB17C /* Frameworks */,
 				219B45DC27C6D37E00EFB17C /* Resources */,
@@ -132,6 +158,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5481B5238FA01A1E53AB7B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-arcweather-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		219B45DA27C6D37E00EFB17C /* Sources */ = {
@@ -284,6 +335,7 @@
 		};
 		219B45F327C6D38900EFB17C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E361CCE27581DA1F3BCCB2E /* Pods-arcweather-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -295,6 +347,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,12 +359,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		219B45F427C6D38900EFB17C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E44CE3D94D37644DA8DFB17 /* Pods-arcweather-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -323,6 +377,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +389,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
