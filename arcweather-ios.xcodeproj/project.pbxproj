@@ -63,15 +63,47 @@
 		219B45E027C6D37E00EFB17C /* arcweather-ios */ = {
 			isa = PBXGroup;
 			children = (
-				219B45E127C6D37E00EFB17C /* AppDelegate.swift */,
-				219B45E327C6D37E00EFB17C /* SceneDelegate.swift */,
-				219B45E527C6D37E00EFB17C /* ViewController.swift */,
-				219B45E727C6D37E00EFB17C /* Main.storyboard */,
-				219B45EA27C6D38900EFB17C /* Assets.xcassets */,
-				219B45EC27C6D38900EFB17C /* LaunchScreen.storyboard */,
-				219B45EF27C6D38900EFB17C /* Info.plist */,
+				21F9FC0427C80451002DC4C6 /* Resources */,
+				21F9FC0327C80428002DC4C6 /* Supporting Files */,
+				21F9FC0527C8046C002DC4C6 /* Scenes */,
 			);
 			path = "arcweather-ios";
+			sourceTree = "<group>";
+		};
+		21F9FC0327C80428002DC4C6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				219B45E127C6D37E00EFB17C /* AppDelegate.swift */,
+				219B45E327C6D37E00EFB17C /* SceneDelegate.swift */,
+				219B45EC27C6D38900EFB17C /* LaunchScreen.storyboard */,
+				219B45EA27C6D38900EFB17C /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		21F9FC0427C80451002DC4C6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				219B45EF27C6D38900EFB17C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		21F9FC0527C8046C002DC4C6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				21F9FC0627C8047B002DC4C6 /* Main */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		21F9FC0627C8047B002DC4C6 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				219B45E527C6D37E00EFB17C /* ViewController.swift */,
+				219B45E727C6D37E00EFB17C /* Main.storyboard */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 		4CDF7B05D4BBB77B6A62E269 /* Frameworks */ = {
@@ -88,7 +120,6 @@
 				6E361CCE27581DA1F3BCCB2E /* Pods-arcweather-ios.debug.xcconfig */,
 				6E44CE3D94D37644DA8DFB17 /* Pods-arcweather-ios.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
