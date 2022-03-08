@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		214ED29527D6EE3B00BCADF8 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 214ED29427D6EE3B00BCADF8 /* OnBoardingViewController.swift */; };
+		214ED29727D6EE5500BCADF8 /* OnBoarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 214ED29627D6EE5500BCADF8 /* OnBoarding.storyboard */; };
 		219B45E227C6D37E00EFB17C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B45E127C6D37E00EFB17C /* AppDelegate.swift */; };
 		219B45E427C6D37E00EFB17C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B45E327C6D37E00EFB17C /* SceneDelegate.swift */; };
 		219B45E627C6D37E00EFB17C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219B45E527C6D37E00EFB17C /* ViewController.swift */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		122137D5C43AD120826CC758 /* Pods_arcweather_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_arcweather_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		214ED29427D6EE3B00BCADF8 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
+		214ED29627D6EE5500BCADF8 /* OnBoarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnBoarding.storyboard; sourceTree = "<group>"; };
 		219B45DE27C6D37E00EFB17C /* arcweather-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "arcweather-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		219B45E127C6D37E00EFB17C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		219B45E327C6D37E00EFB17C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -42,6 +46,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		214ED29327D6EE1D00BCADF8 /* onBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				214ED29427D6EE3B00BCADF8 /* OnBoardingViewController.swift */,
+				214ED29627D6EE5500BCADF8 /* OnBoarding.storyboard */,
+			);
+			path = onBoarding;
+			sourceTree = "<group>";
+		};
 		219B45D527C6D37E00EFB17C = {
 			isa = PBXGroup;
 			children = (
@@ -92,6 +105,7 @@
 		21F9FC0527C8046C002DC4C6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				214ED29327D6EE1D00BCADF8 /* onBoarding */,
 				21F9FC0627C8047B002DC4C6 /* Main */,
 			);
 			path = Scenes;
@@ -185,6 +199,7 @@
 				219B45EE27C6D38900EFB17C /* LaunchScreen.storyboard in Resources */,
 				219B45EB27C6D38900EFB17C /* Assets.xcassets in Resources */,
 				219B45E927C6D37E00EFB17C /* Main.storyboard in Resources */,
+				214ED29727D6EE5500BCADF8 /* OnBoarding.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +238,7 @@
 				219B45E627C6D37E00EFB17C /* ViewController.swift in Sources */,
 				219B45E227C6D37E00EFB17C /* AppDelegate.swift in Sources */,
 				219B45E427C6D37E00EFB17C /* SceneDelegate.swift in Sources */,
+				214ED29527D6EE3B00BCADF8 /* OnBoardingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
