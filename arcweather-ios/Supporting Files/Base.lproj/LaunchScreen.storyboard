@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -14,24 +14,30 @@
             <objects>
                 <viewController id="01J-lp-oVM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashScreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="nlW-vm-k74">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" semanticContentAttribute="playback" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashScreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="nlW-vm-k74">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="default"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="SplashScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="NFc-Qn-nkD">
-                                <rect key="frame" x="133" y="266" width="236" height="155"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SplashScreenLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Rpn-09-cQA">
+                                <rect key="frame" x="99" y="297.66666666666669" width="236" height="181"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="236" id="Moc-wq-1Ts"/>
+                                    <constraint firstAttribute="height" constant="181" id="t25-ED-sFm"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="nlW-vm-k74" secondAttribute="bottom" id="Bdp-vQ-Q1M"/>
-                            <constraint firstAttribute="trailing" secondItem="nlW-vm-k74" secondAttribute="trailing" id="anT-JN-rpk"/>
-                            <constraint firstItem="nlW-vm-k74" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="wYm-7A-LZ6"/>
-                            <constraint firstItem="nlW-vm-k74" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="yLm-YL-4xD"/>
+                            <constraint firstAttribute="bottom" secondItem="nlW-vm-k74" secondAttribute="bottom" id="7F0-Re-zKc"/>
+                            <constraint firstAttribute="trailing" secondItem="nlW-vm-k74" secondAttribute="trailing" id="MUw-ZZ-8hB"/>
+                            <constraint firstItem="Rpn-09-cQA" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" constant="-75" id="SmY-YR-xy4"/>
+                            <constraint firstItem="nlW-vm-k74" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="TZo-Ob-e9e"/>
+                            <constraint firstItem="nlW-vm-k74" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ThJ-ck-bYa"/>
+                            <constraint firstItem="Rpn-09-cQA" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" constant="3" id="ydK-hH-gsk"/>
                         </constraints>
                     </view>
                 </viewController>
