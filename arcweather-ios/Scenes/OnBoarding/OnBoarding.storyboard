@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--On Boarding View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="OnBoardingViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="OnBoardingViewController" customModule="arcweather_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnBoardingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="w2q-jW-FvG">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnBoardingPage01" translatesAutoresizingMaskIntoConstraints="NO" id="58T-bk-nCW">
+                                <rect key="frame" x="0.0" y="181" width="414" height="226"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="58T-bk-nCW" secondAttribute="height" multiplier="207:113" id="e0b-X5-ljL"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="752" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJO-TR-jr2">
+                                <rect key="frame" x="332" y="64" width="62" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Paa-Dd-qxP"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Skip">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <pageControl opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="9Yi-0g-q7O">
+                                <rect key="frame" x="0.0" y="410" width="414" height="26"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Us-Wo-04q">
+                                <rect key="frame" x="160" y="736" width="94" height="52"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="OTB-NM-MqJ"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="OnBoardingPathButton" imagePlacement="trailing" title="Next" imagePadding="16">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your new favorite weather app, with all the features you need to have the best information available." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feX-hG-8sh">
+                                <rect key="frame" x="34" y="479" width="346" height="74"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to ArcWeather" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gPp-M8-R8A">
+                                <rect key="frame" x="54" y="436" width="306" height="39"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9Yi-0g-q7O" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="4aM-Nr-UZd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="feX-hG-8sh" secondAttribute="trailing" constant="34" id="EIJ-Do-7Pz"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="4Us-Wo-04q" secondAttribute="bottom" constant="74" id="FKg-KX-EV5"/>
+                            <constraint firstItem="w2q-jW-FvG" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="G2G-lQ-IeB"/>
+                            <constraint firstAttribute="trailing" secondItem="58T-bk-nCW" secondAttribute="trailing" id="Hie-K4-FR8"/>
+                            <constraint firstItem="4Us-Wo-04q" firstAttribute="top" relation="greaterThanOrEqual" secondItem="feX-hG-8sh" secondAttribute="bottom" constant="4" id="Jn6-ak-YE8"/>
+                            <constraint firstItem="gPp-M8-R8A" firstAttribute="top" secondItem="9Yi-0g-q7O" secondAttribute="bottom" id="NSR-jP-nrq"/>
+                            <constraint firstItem="58T-bk-nCW" firstAttribute="top" secondItem="fJO-TR-jr2" secondAttribute="bottom" constant="75" id="OF2-qL-ngc"/>
+                            <constraint firstItem="feX-hG-8sh" firstAttribute="top" secondItem="gPp-M8-R8A" secondAttribute="bottom" constant="4" id="PNr-lO-cBH"/>
+                            <constraint firstItem="w2q-jW-FvG" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="T3K-ub-gNf"/>
+                            <constraint firstAttribute="bottom" secondItem="w2q-jW-FvG" secondAttribute="bottom" id="XW5-M2-2Dg"/>
+                            <constraint firstItem="4Us-Wo-04q" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="aBY-C1-6gr"/>
+                            <constraint firstItem="9Yi-0g-q7O" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="aBk-wF-4yy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fJO-TR-jr2" secondAttribute="trailing" constant="20" id="aod-sa-yC0"/>
+                            <constraint firstItem="gPp-M8-R8A" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leadingMargin" constant="34" id="fqN-CE-Out"/>
+                            <constraint firstItem="fJO-TR-jr2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="g7L-iz-qqx"/>
+                            <constraint firstItem="9Yi-0g-q7O" firstAttribute="top" secondItem="58T-bk-nCW" secondAttribute="bottom" constant="3" id="kah-hb-0Yq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gPp-M8-R8A" secondAttribute="trailing" constant="34" id="sBg-6b-mzU"/>
+                            <constraint firstItem="58T-bk-nCW" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="sWb-oD-GrG"/>
+                            <constraint firstAttribute="trailing" secondItem="w2q-jW-FvG" secondAttribute="trailing" id="x5B-eE-8Ci"/>
+                            <constraint firstItem="feX-hG-8sh" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="34" id="zZz-Rg-maN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-110.14492753623189" y="180.80357142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="OnBoardingBackground" width="375" height="667"/>
+        <image name="OnBoardingPage01" width="375" height="205"/>
+        <image name="OnBoardingPathButton" width="11" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
