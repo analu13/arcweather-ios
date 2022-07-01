@@ -17,6 +17,8 @@
 		219B45E927C6D37E00EFB17C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219B45E727C6D37E00EFB17C /* Main.storyboard */; };
 		219B45EB27C6D38900EFB17C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 219B45EA27C6D38900EFB17C /* Assets.xcassets */; };
 		219B45EE27C6D38900EFB17C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 219B45EC27C6D38900EFB17C /* LaunchScreen.storyboard */; };
+		21A97F0B286F44C300C65169 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A97F0A286F44C300C65169 /* SettingsViewController.swift */; };
+		21A97F0D286F44EE00C65169 /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21A97F0C286F44EE00C65169 /* Settings.storyboard */; };
 		21F0ADF828626FC100C153BA /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F0ADF728626FC100C153BA /* OnBoarding.swift */; };
 		4A3A1165695F446225F44815 /* Pods_arcweather_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122137D5C43AD120826CC758 /* Pods_arcweather_ios.framework */; };
 /* End PBXBuildFile section */
@@ -35,6 +37,8 @@
 		219B45EA27C6D38900EFB17C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		219B45ED27C6D38900EFB17C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		219B45EF27C6D38900EFB17C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		21A97F0A286F44C300C65169 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		21A97F0C286F44EE00C65169 /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
 		21F0ADF728626FC100C153BA /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 		6E361CCE27581DA1F3BCCB2E /* Pods-arcweather-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arcweather-ios.debug.xcconfig"; path = "Target Support Files/Pods-arcweather-ios/Pods-arcweather-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		6E44CE3D94D37644DA8DFB17 /* Pods-arcweather-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-arcweather-ios.release.xcconfig"; path = "Target Support Files/Pods-arcweather-ios/Pods-arcweather-ios.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,6 +103,15 @@
 			path = "arcweather-ios";
 			sourceTree = "<group>";
 		};
+		21A97F09286F448D00C65169 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				21A97F0A286F44C300C65169 /* SettingsViewController.swift */,
+				21A97F0C286F44EE00C65169 /* Settings.storyboard */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		21F0ADF628626F9300C153BA /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +142,7 @@
 		21F9FC0527C8046C002DC4C6 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				21A97F09286F448D00C65169 /* Settings */,
 				215D2D5E286D1FC70041442B /* boarding */,
 				214ED29327D6EE1D00BCADF8 /* OnBoarding */,
 				21F9FC0627C8047B002DC4C6 /* Main */,
@@ -225,6 +239,7 @@
 				215D2D60286D1FDB0041442B /* boarding.storyboard in Resources */,
 				219B45EE27C6D38900EFB17C /* LaunchScreen.storyboard in Resources */,
 				219B45EB27C6D38900EFB17C /* Assets.xcassets in Resources */,
+				21A97F0D286F44EE00C65169 /* Settings.storyboard in Resources */,
 				219B45E927C6D37E00EFB17C /* Main.storyboard in Resources */,
 				214ED29727D6EE5500BCADF8 /* OnBoarding.storyboard in Resources */,
 			);
@@ -281,6 +296,7 @@
 			files = (
 				219B45E627C6D37E00EFB17C /* ViewController.swift in Sources */,
 				219B45E227C6D37E00EFB17C /* AppDelegate.swift in Sources */,
+				21A97F0B286F44C300C65169 /* SettingsViewController.swift in Sources */,
 				215D2D62286D20710041442B /* BoardingPageViewController.swift in Sources */,
 				219B45E427C6D37E00EFB17C /* SceneDelegate.swift in Sources */,
 				21F0ADF828626FC100C153BA /* OnBoarding.swift in Sources */,

@@ -1,13 +1,13 @@
 //
-//  BoardingPageViewController.swift
+//  SettingsViewController.swift
 //  arcweather-ios
 //
-//  Created by Analu Lisboa on 29/06/22.
+//  Created by Analu Lisboa on 01/07/22.
 //
 
 import UIKit
 
-class BoardingPageViewController: UIPageViewController {
+class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
