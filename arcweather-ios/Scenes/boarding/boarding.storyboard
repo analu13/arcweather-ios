@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DtQ-kf-KDK">
+    <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -15,25 +15,121 @@
                 <pageViewController storyboardIdentifier="BoardingPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="1IZ-Cp-K5K" customClass="BoardingPageViewController" customModule="arcweather_ios" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxd-J9-Ja6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-442" y="-536"/>
+            <point key="canvasLocation" x="-707" y="-666"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpV-dt-XWf">
+                                <rect key="frame" x="0.0" y="30" width="442" height="926"/>
+                                <connections>
+                                    <segue destination="1IZ-Cp-K5K" kind="embed" id="nPo-qQ-nCi"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="lpV-dt-XWf" secondAttribute="trailing" id="Ehr-m4-j6c"/>
+                            <constraint firstAttribute="bottom" secondItem="lpV-dt-XWf" secondAttribute="bottom" id="MxC-Ys-p7v"/>
+                            <constraint firstItem="lpV-dt-XWf" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="NxL-zx-D2J"/>
+                            <constraint firstItem="lpV-dt-XWf" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="il4-kE-3Go"/>
+                        </constraints>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="391" y="-536"/>
+            <point key="canvasLocation" x="-36" y="-662"/>
+        </scene>
+        <!--Boarding View Controller-->
+        <scene sceneID="GeH-DM-Qo7">
+            <objects>
+                <viewController storyboardIdentifier="BoardingViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DtQ-kf-KDK" customClass="BoardingViewController" customModule="arcweather_ios" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="doO-d8-vIb">
+                        <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnBoardingBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Lgl-7n-jXY">
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yop-P9-Yhu">
+                                <rect key="frame" x="341" y="64" width="62" height="42"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Skip">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCR-es-YXf">
+                                <rect key="frame" x="171" y="809" width="86" height="42"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="OnBoardingPathButton" imagePlacement="trailing" title="Next" imagePadding="8">
+                                    <fontDescription key="titleFontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnBoardingPage03" translatesAutoresizingMaskIntoConstraints="NO" id="rhc-YV-587">
+                                <rect key="frame" x="0.0" y="181" width="428" height="285"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="285" id="8eo-jL-0BC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kl7-ju-Hr5">
+                                <rect key="frame" x="34" y="516" width="360" height="38.666666666666629"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="28"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SW8-yI-PPq">
+                                <rect key="frame" x="34" y="559.66666666666663" width="360" height="24.666666666666629"/>
+                                <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="zAw-YS-TEL">
+                                <rect key="frame" x="34" y="486" width="360" height="25"/>
+                            </pageControl>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Lgl-7n-jXY" firstAttribute="leading" secondItem="doO-d8-vIb" secondAttribute="leading" id="04V-WJ-66F"/>
+                            <constraint firstItem="yop-P9-Yhu" firstAttribute="top" secondItem="doO-d8-vIb" secondAttribute="topMargin" constant="20" id="1Kx-Bb-tfh"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="yop-P9-Yhu" secondAttribute="trailing" constant="5" id="6bU-hf-Ddn"/>
+                            <constraint firstItem="SW8-yI-PPq" firstAttribute="top" secondItem="Kl7-ju-Hr5" secondAttribute="bottom" constant="5" id="7kz-wK-Fdh"/>
+                            <constraint firstItem="Kl7-ju-Hr5" firstAttribute="top" secondItem="zAw-YS-TEL" secondAttribute="bottom" constant="5" id="9xG-ZU-8QI"/>
+                            <constraint firstItem="rhc-YV-587" firstAttribute="leading" secondItem="doO-d8-vIb" secondAttribute="leading" id="Ipp-E1-Mup"/>
+                            <constraint firstItem="rhc-YV-587" firstAttribute="top" secondItem="yop-P9-Yhu" secondAttribute="bottom" constant="75" id="Ow9-kF-Xdu"/>
+                            <constraint firstAttribute="trailing" secondItem="zAw-YS-TEL" secondAttribute="trailing" constant="34" id="QNW-VP-2ck"/>
+                            <constraint firstAttribute="trailing" secondItem="rhc-YV-587" secondAttribute="trailing" id="S6b-Xa-eiR"/>
+                            <constraint firstItem="SW8-yI-PPq" firstAttribute="leading" secondItem="doO-d8-vIb" secondAttribute="leading" constant="34" id="aiI-YS-XXH"/>
+                            <constraint firstAttribute="trailing" secondItem="Kl7-ju-Hr5" secondAttribute="trailing" constant="34" id="elq-kt-wJE"/>
+                            <constraint firstAttribute="bottom" secondItem="Lgl-7n-jXY" secondAttribute="bottom" id="gBm-SE-7hI"/>
+                            <constraint firstAttribute="trailing" secondItem="Lgl-7n-jXY" secondAttribute="trailing" id="hi3-9o-t4K"/>
+                            <constraint firstItem="zAw-YS-TEL" firstAttribute="top" secondItem="rhc-YV-587" secondAttribute="bottom" constant="20" id="hik-Fs-BsG"/>
+                            <constraint firstItem="Kl7-ju-Hr5" firstAttribute="leading" secondItem="doO-d8-vIb" secondAttribute="leading" constant="34" id="kEn-TJ-h1C"/>
+                            <constraint firstItem="zAw-YS-TEL" firstAttribute="leading" secondItem="doO-d8-vIb" secondAttribute="leading" constant="34" id="kJc-UE-QlC"/>
+                            <constraint firstItem="hCR-es-YXf" firstAttribute="centerX" secondItem="doO-d8-vIb" secondAttribute="centerX" id="oFp-Lo-cW3"/>
+                            <constraint firstItem="Lgl-7n-jXY" firstAttribute="top" secondItem="doO-d8-vIb" secondAttribute="top" id="q0x-HI-Ywb"/>
+                            <constraint firstAttribute="bottom" secondItem="hCR-es-YXf" secondAttribute="bottom" constant="75" id="vMj-Bc-TLC"/>
+                            <constraint firstAttribute="trailing" secondItem="SW8-yI-PPq" secondAttribute="trailing" constant="34" id="zSQ-5X-91J"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BBD-c6-k0H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="670" y="-662"/>
         </scene>
     </scenes>
     <resources>
+        <image name="OnBoardingBackground" width="375" height="667"/>
+        <image name="OnBoardingPage03" width="375" height="283"/>
+        <image name="OnBoardingPathButton" width="11" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -1,5 +1,5 @@
 //
-//  SettingsViewController.swift
+//  BoardingViewController.swift
 //  arcweather-ios
 //
 //  Created by Analu Lisboa on 01/07/22.
@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SettingsViewController: UIViewController {
+class BoardingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
