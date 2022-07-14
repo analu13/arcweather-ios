@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DtQ-kf-KDK">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
     <device id="retina6_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -15,7 +15,7 @@
                 <pageViewController storyboardIdentifier="BoardingPageViewController" autoresizesArchivedViewToFullSize="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="1IZ-Cp-K5K" customClass="BoardingPageViewController" customModule="arcweather_ios" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cxd-J9-Ja6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-707" y="-666"/>
+            <point key="canvasLocation" x="-171" y="-744"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -26,7 +26,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lpV-dt-XWf">
-                                <rect key="frame" x="0.0" y="30" width="442" height="926"/>
+                                <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                                 <connections>
                                     <segue destination="1IZ-Cp-K5K" kind="embed" id="nPo-qQ-nCi"/>
                                 </connections>
@@ -45,12 +45,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-36" y="-662"/>
+            <point key="canvasLocation" x="-1039" y="-743"/>
         </scene>
         <!--Boarding View Controller-->
         <scene sceneID="GeH-DM-Qo7">
             <objects>
-                <viewController storyboardIdentifier="BoardingViewController" modalPresentationStyle="fullScreen" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DtQ-kf-KDK" customClass="BoardingViewController" customModule="arcweather_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BoardingViewController" modalPresentationStyle="fullScreen" id="DtQ-kf-KDK" customClass="BoardingViewController" customModule="arcweather_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="doO-d8-vIb">
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -65,6 +65,9 @@
                                     <fontDescription key="titleFontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="skipButtonTappedWithSender:" destination="DtQ-kf-KDK" eventType="touchUpInside" id="7eq-q8-u21"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCR-es-YXf">
                                 <rect key="frame" x="171" y="809" width="86" height="42"/>
@@ -73,21 +76,24 @@
                                     <fontDescription key="titleFontDescription" name="Avenir-Light" family="Avenir" pointSize="20"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="nextButtonTappedWithSender:" destination="DtQ-kf-KDK" eventType="touchUpInside" id="ShQ-Pq-IUl"/>
+                                </connections>
                             </button>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnBoardingPage03" translatesAutoresizingMaskIntoConstraints="NO" id="rhc-YV-587">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="OnBoardingPage01" translatesAutoresizingMaskIntoConstraints="NO" id="rhc-YV-587">
                                 <rect key="frame" x="0.0" y="181" width="428" height="285"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="285" id="8eo-jL-0BC"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kl7-ju-Hr5">
-                                <rect key="frame" x="34" y="516" width="360" height="38.666666666666629"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kl7-ju-Hr5">
+                                <rect key="frame" x="34" y="516" width="360" height="38.333333333333371"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="28"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SW8-yI-PPq">
-                                <rect key="frame" x="34" y="559.66666666666663" width="360" height="24.666666666666629"/>
+                                <rect key="frame" x="34" y="559.33333333333337" width="360" height="24.666666666666629"/>
                                 <fontDescription key="fontDescription" name="Avenir-Light" family="Avenir" pointSize="18"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -96,6 +102,7 @@
                                 <rect key="frame" x="34" y="486" width="360" height="25"/>
                             </pageControl>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="hpi-Nb-gZx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="Lgl-7n-jXY" firstAttribute="leading" secondItem="doO-d8-vIb" secondAttribute="leading" id="04V-WJ-66F"/>
@@ -120,15 +127,23 @@
                             <constraint firstAttribute="trailing" secondItem="SW8-yI-PPq" secondAttribute="trailing" constant="34" id="zSQ-5X-91J"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainDescription" destination="SW8-yI-PPq" id="76S-ga-n5m"/>
+                        <outlet property="mainImage" destination="rhc-YV-587" id="i6B-h5-Knm"/>
+                        <outlet property="mainTitle" destination="Kl7-ju-Hr5" id="t37-nx-Rxw"/>
+                        <outlet property="nextButton" destination="hCR-es-YXf" id="Gcg-op-wuw"/>
+                        <outlet property="pageControl" destination="zAw-YS-TEL" id="wEF-Op-85d"/>
+                        <outlet property="skipButton" destination="yop-P9-Yhu" id="cpy-6F-WfP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BBD-c6-k0H" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="670" y="-662"/>
+            <point key="canvasLocation" x="629" y="-743"/>
         </scene>
     </scenes>
     <resources>
         <image name="OnBoardingBackground" width="375" height="667"/>
-        <image name="OnBoardingPage03" width="375" height="283"/>
+        <image name="OnBoardingPage01" width="375" height="205"/>
         <image name="OnBoardingPathButton" width="11" height="20"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

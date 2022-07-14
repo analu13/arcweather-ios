@@ -57,20 +57,20 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SettingsBackground" translatesAutoresizingMaskIntoConstraints="NO" id="4sy-wA-h8H">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYs-ng-ifc">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mYs-ng-ifc">
                                 <rect key="frame" x="165" y="220" width="85" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="43" id="OWy-gn-wIh"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="t5B-lX-MB0">
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="t5B-lX-MB0">
                                 <rect key="frame" x="149" y="414" width="116" height="26"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </pageControl>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubC-b1-Jiw">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ubC-b1-Jiw">
                                 <rect key="frame" x="165" y="564" width="67" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
                                 <connections>
@@ -83,8 +83,15 @@
                         <constraints>
                             <constraint firstItem="4sy-wA-h8H" firstAttribute="leading" secondItem="5Ij-jO-aNV" secondAttribute="leading" id="0WG-mc-WdA"/>
                             <constraint firstAttribute="bottom" secondItem="4sy-wA-h8H" secondAttribute="bottom" id="5be-M7-alK"/>
+                            <constraint firstItem="mYs-ng-ifc" firstAttribute="leading" secondItem="ubC-b1-Jiw" secondAttribute="leading" id="DW7-RN-I2R"/>
+                            <constraint firstItem="t5B-lX-MB0" firstAttribute="top" secondItem="5Ij-jO-aNV" secondAttribute="top" constant="414" id="Hmn-Rs-yuL"/>
+                            <constraint firstItem="mYs-ng-ifc" firstAttribute="leading" secondItem="E0I-Og-JdH" secondAttribute="leading" constant="165" id="N6D-Ia-kOg"/>
+                            <constraint firstItem="E0I-Og-JdH" firstAttribute="bottom" secondItem="ubC-b1-Jiw" secondAttribute="bottom" constant="267" id="PNV-RJ-uas"/>
                             <constraint firstItem="4sy-wA-h8H" firstAttribute="top" secondItem="5Ij-jO-aNV" secondAttribute="top" id="Rlz-vl-x2F"/>
+                            <constraint firstItem="mYs-ng-ifc" firstAttribute="centerX" secondItem="4sy-wA-h8H" secondAttribute="centerX" id="fqk-mo-Jj1"/>
+                            <constraint firstItem="mYs-ng-ifc" firstAttribute="centerX" secondItem="t5B-lX-MB0" secondAttribute="centerX" id="n6F-yc-twy"/>
                             <constraint firstAttribute="trailing" secondItem="4sy-wA-h8H" secondAttribute="trailing" id="nvJ-Wb-46s"/>
+                            <constraint firstItem="mYs-ng-ifc" firstAttribute="top" secondItem="E0I-Og-JdH" secondAttribute="top" constant="176" id="wgC-Vv-0ju"/>
                         </constraints>
                     </view>
                     <connections>
